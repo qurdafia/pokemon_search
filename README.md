@@ -4,6 +4,7 @@ A simple terminal application for searching a Pokemon via PokeAPI
 Instructions:
 
 1. User should use a Python3 interpreter
+2. Please install the necessary libraries, you can use the requirements.txt file
 
 User Guide:
 
