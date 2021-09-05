@@ -67,14 +67,14 @@ with open('data.json', 'r') as read_file:
                         enc_list.append(encounter["location_area"]["name"])
                         method_list.append(encounter["location_area"]["url"])
                 
-                print("Encounter(s): ")
+                print("Kanto Encounter(s): ")
                 if enc_list:
                     for enc in enc_list:
                         print(enc)
                 else:
                     print("-")
 
-                print("Method(s): ")
+                print("Kanto Method(s): ")
                 if method_list:
                     for method in method_list:
                         url_api_method = method
@@ -104,7 +104,7 @@ with open('data.json', 'r') as read_file:
 
     # Search Pokemon by ID
     def search_pokemon_id():
-        poke = input("Enter id: ")
+        poke = input("Enter ID: ")
         search = []
         for pokemon in pokemon_all:
             url = pokemon["url"]
@@ -122,7 +122,10 @@ with open('data.json', 'r') as read_file:
             print("No luck.")
 
     def search():
-        ui_one = input("Press 1 if search by name, 2 if by ID: ")
+        print("==============================")
+        print("Welcome to Pokemon Search App!")
+        print("==============================")
+        ui_one = input("Press 1 to search by name, press 2 to search by ID: ")
         if ui_one == "1":
             search_pokemon()
         elif ui_one == "2":
