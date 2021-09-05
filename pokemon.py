@@ -24,7 +24,7 @@ if delta > 7:
 
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(pokemon_data, f, ensure_ascii=False, indent=4)
-        
+
 
 # Loads the json file
 with open('data.json', 'r') as read_file:
@@ -128,6 +128,6 @@ with open('data.json', 'r') as read_file:
         elif ui_one == "2":
             search_pokemon_id()
         else:
-            print("I can't recognize your answer.")
+            print("I can't recognize your input.")
 
     search()
